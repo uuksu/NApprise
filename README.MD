@@ -1,8 +1,8 @@
 # NApprise
 
-![CI](https://github.com/uuksu/napprise/workflows/CI/badge.svg)
-[![NuGet](https://img.shields.io/nuget/dt/napprise.svg)](https://www.nuget.org/packages/mediatr) 
-[![NuGet](https://img.shields.io/nuget/vpre/napprise.svg)](https://www.nuget.org/packages/mediatr)
+[![.CI](https://github.com/uuksu/NApprise/actions/workflows/CI.yml/badge.svg)](https://github.com/uuksu/NApprise/actions/workflows/CI.yml)
+[![NuGet](https://img.shields.io/nuget/dt/napprise.svg)](https://www.nuget.org/packages/napprise) 
+[![NuGet](https://img.shields.io/nuget/vpre/napprise.svg)](https://www.nuget.org/packages/napprise)
 
 Simple .NET Client for great [Apprise](https://github.com/caronc/apprise) powered by OpenAPI/NSwag.
 
