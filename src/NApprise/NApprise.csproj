@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Title>Simple .NET Client for great Apprise powered by OpenAPI/NSwag</Title>
+    <PackageId>NApprise</PackageId>
+    <Product>NApprise</Product>
+    <AssemblyName>NApprise</AssemblyName>
+    <IsPackable>true</IsPackable>
+    <Authors>Mikko Uuksulainen</Authors>
+    <PackageTags>Apprise;Client;Notification</PackageTags>
+    <Description>Simple .NET Client for great Apprise powered by OpenAPI/NSwag</Description>
+    <PackageDescription>Simple .NET Client for great Apprise powered by OpenAPI/NSwag</PackageDescription>
+    <PackageProjectUrl>https://github.com/uuksu/NApprise</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/uuksu/NApprise</RepositoryUrl>
+    <MinVerMinimumMajorMinor>1.0</MinVerMinimumMajorMinor>
+    <Readme>../../README.MD</Readme>
+    <Copyright>©2022 Mikko Uuksulainen</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="3.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSwag.MSBuild" Version="13.15.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="NSwag" BeforeTargets="BeforeBuild">
+    <Copy SourceFiles="@(Reference)" DestinationFolder="$(OutDir)References" />
+    <Exec Command="$(NSwagExe_Net60) run nswag.json /variables:Configuration=$(Configuration)" />
+    <RemoveDir Directories="$(OutDir)References" />
+  </Target>
+
+</Project>

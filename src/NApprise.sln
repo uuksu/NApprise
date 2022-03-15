@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NApprise", "NApprise\NApprise.csproj", "{1F7684AC-3E45-4BEB-BCDC-416554E1A5E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NApprise.Sample.Console", "..\samples\NApprise.Sample.Console\NApprise.Sample.Console.csproj", "{C2721557-D405-46CE-B28E-117A94819B82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F7684AC-3E45-4BEB-BCDC-416554E1A5E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7684AC-3E45-4BEB-BCDC-416554E1A5E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7684AC-3E45-4BEB-BCDC-416554E1A5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7684AC-3E45-4BEB-BCDC-416554E1A5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2721557-D405-46CE-B28E-117A94819B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2721557-D405-46CE-B28E-117A94819B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2721557-D405-46CE-B28E-117A94819B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2721557-D405-46CE-B28E-117A94819B82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+[submodule "lib/apprise-api"]
+	path = lib/apprise-api
+	url = git@github.com:caronc/apprise-api.git
