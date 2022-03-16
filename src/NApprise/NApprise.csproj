@@ -39,6 +39,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>   
+    <Compile Include="AppriseApiClient.cs" />
+  </ItemGroup>
+
   <Target Name="NSwag" BeforeTargets="BeforeBuild">
     <Copy SourceFiles="@(Reference)" DestinationFolder="$(OutDir)References" />
     <Exec Command="$(NSwagExe_Net60) run nswag.json /variables:Configuration=$(Configuration)" />
